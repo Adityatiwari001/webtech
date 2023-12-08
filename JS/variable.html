@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>variable calculation</title>
+
+	<script>
+		function calculate(){
+
+			var num1 = document.getElementById("number1").value;
+			var num2 = document.getElementById("number2").value;
+
+			var add,sub,mul,div;
+
+			add = parseInt(num1) + parseInt(num2)
+			sub = num1 - num2
+			mul = num1 * num2
+			div = num1 / num2
+
+			document.getElementById("addspan").innerHTML = add;
+			document.getElementById("subspan").innerHTML = sub;
+			document.getElementById("mulspan").innerHTML = mul;
+			document.getElementById("divspan").innerHTML = div;
+		}
+	</script>
+
+</head>
+<body>
+<table border="2">
+	<tr>
+		<td colspan="2" align="center">Calculation</td>
+	</tr>
+	<tr>
+		<td>Number 1</td>
+		<td><input type="text" id="number1" placeholder="Enter the First Number"></td>
+	</tr>
+
+	<tr>
+		<td>Number 2</td>
+		<td><input type="text" id="number2" placeholder="Enter the Second Number"></td>
+	</tr>
+
+	<tr>
+		<td>Addition</td>
+		<td><span id="addspan"></span></td>
+	</tr>
+
+	<tr>
+		<td>Substraction</td>
+		<td><span id="subspan"></span></td>
+	</tr>
+
+	<tr>
+		<td>Multiplication</td>
+		<td><span id="mulspan"></span></td>
+	</tr>
+
+	<tr>
+		<td>Division</td>
+		<td><span id="divspan"></span></td>
+	</tr>
+
+	<tr>
+		<td colspan="2" align="center"><button onclick="calculate()">Calculate</button></td>
+	</tr>
+</table>
+</body>
+</html>

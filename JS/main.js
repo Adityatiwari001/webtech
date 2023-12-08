@@ -1,0 +1,3 @@
+empythise
+define
+ideate

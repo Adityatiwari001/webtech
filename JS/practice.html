@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> practice js</title>
+	<script>
+		function ad(){
+
+          var name = document.getElementById("aa").value;
+          var name1 = document.getElementById("bb").value;
+
+
+		
+		if (name==name1){
+              alert("login")
+
+		}
+
+		else {
+
+			alert("wrong password")
+		}
+
+	}
+	</script>
+</head>
+<body>
+<table>
+	<tr>
+		<td>password</td>
+		<td>
+			<input type="password" id="aa">
+		</td>
+	</tr>
+	<tr>
+		<td>
+			con password
+		</td>
+		<td>
+		<input type="password" id="bb">
+	</td>
+	</tr>
+	<tr>
+		<td>
+			<button onclick="ad()"> submit  </button>
+		</td>
+	</tr>
+</table>
+</body>
+</html>

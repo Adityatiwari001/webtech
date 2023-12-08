@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> form making by js</title>
+	<script type="text/javascript">
+		function adii()
+		{   
+			var name = document.getElementById('name').value;
+			var mob = document.getElementById('mob').value;
+			var email = document.getElementById('email').value;
+			var password = document.getElementById('password').value;
+			var cpass = document.getElementById('c_password').value;
+
+			if (name == ""){
+				alert("Name Feild is Empty !!")
+			}
+
+			if (mob == ""){
+				alert("Mobile Number Feild is Empty !!")
+			}
+
+			if (email == ""){
+				alert("Email Feild is Empty !!")
+			}
+
+			if (password == ""){
+				alert("Password Feild is Empty !!")
+			}
+
+			if (cpass == ""){
+				alert("Confirm Password Feild is Empty !!")
+			}
+
+			if (password == c_pass) {
+				alert("Your Password has been matched ✔️✔️")
+			}
+			
+			else {
+				alert("Your password has been matched ❌❌")
+			}
+
+		}
+		
+	</script>
+</head>
+<body>
+<form>
+	<table align = "center" border="1">
+		<th colspan="2">
+			Registration form
+		</th>
+		<tr>
+			<td>Name</td>
+			<td><input type="text" placeholder="Enter your name" id="name" size="26"></td>
+		</tr>
+		<tr>
+			<td>
+				Mob No.
+			
+			</td>
+			<td>
+				<select>
+					<option>91</option>
+					<option>85</option>
+					<option>93</option>
+					<option>00</option>
+					<option>45</option>
+					<option>87</option>
+					<option>23</option>
+					<option>55</option>
+					<option>88</option>
+					<option>99</option>
+					<option>72</option>
+					<option>82</option>
+				</select>
+				<input type="text" placeholder="Enter your mobile number" id="mob">
+			</td>
+		</tr>
+		<tr>
+			<td>
+				Email
+			</td>
+			<td>
+				<input type="text" placeholder="Enter your Email address" id="email" size="26">
+			</td>
+		</tr>
+		<tr>
+			<td>
+				Password
+			</td>
+			<td>
+				<input type="Password" placeholder="Enter your Email Password" id="password" size="26">
+			</td>
+		</tr>
+		<tr>
+			<td>
+				Confirm Password
+			</td>
+			<td>
+				<input type="Password" placeholder="Enter your Confirm Password" id="c_password" size="26">
+			</td>
+		</tr>
+		<tr>
+			<td bgcolor="red" colspan="2" align="center">
+				<button onClick="adii()">Submit</button>
+			</td>
+		</tr>
+	</table>
+</form>
+</body>
+</html>

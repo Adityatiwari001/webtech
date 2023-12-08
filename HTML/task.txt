@@ -1,0 +1,8 @@
+task 
+
+develop the registration  form using atleast 10 feilds and a submit button. Apply following validations to the form 
+
+a) all feilds are mandatory.
+b) password and confirm password must match.
+c) mobile no. must be of 10 digits.
+d)email id must be in regular format.

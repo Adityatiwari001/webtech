@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>password and confirm password</title>
+    <script>
+        function pass_check(){
+            var pass = document.getElementById("pass").value;
+            var copass = document.getElementById("cpass").value;
+
+            if (pass == copass){
+                alert("Login Successfully")
+            }
+            else{
+                alert("Invalid Password and confirm password")
+            }
+        }
+    </script>
+</head>
+<body>
+    <form>
+    <table>
+        <tr>
+            <td>Username : </td>
+            <td>
+                <input type="text" name="" id="name" required>
+            </td>
+        </tr>
+
+        <tr>
+            <td>password : </td>
+            <td>
+                <input type="password" name="" id="pass" required>
+            </td>
+        </tr>
+
+        <tr>
+            <td>Confirm password</td>
+            <td>
+                <input type="password" name="" id="cpass" required>
+            </td>
+        </tr>
+
+        <tr>
+            <td></td>
+            <td><button onclick="pass_check()">Login</button></td>
+        </tr>
+    </table>
+    </form>
+</body>
+</html>

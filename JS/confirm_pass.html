@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confirm Password</title>
+    <script>
+        var pass = document.getElementById("password").value();
+        var cpass = document.getElementById("cpassword").value();
+        
+        function matched(){
+            if (pass == cpass){
+                alert("Password and confirm Password is matched !!")
+                document.getElementById("p_status").innerHTML = "Matched";
+            }
+            else{
+                alert("Password and cofirm password is not matched !! Please try Again !!")
+                document.getElementById("p_status").innerHTML= "not Matched";
+            }
+        }
+    </script>
+</head>
+<body>
+    <table>
+        <tr>
+            <td>Password: </td>
+            <td><input type="password" id="password"></td>
+        </tr>
+
+        <tr>
+            <td>Confirm Password: </td>
+            <td><input type="password" name="" id="cpassword"></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><span id="p_status"></span></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><button onclick="matched()">Submit</button></td>
+        </tr>
+    </table>
+</body>
+</html>

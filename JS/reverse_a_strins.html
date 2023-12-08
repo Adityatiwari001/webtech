@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Reverse the String</title>
+    <script>
+        function rev(){
+        var text = document.getElementById("string").value;
+        const str = text;
+        let reverseStr = "";
+
+        for (let i = str.length -1; i >= 0; i--){
+            reverseStr += str[i];
+        }
+
+        document.getElementById("rev_txt").innerHTML = reverseStr;
+
+    }
+    </script>
+</head>
+<body>
+    <table>
+        <tr>
+            <td>Enter the String</td>
+            <td><input type="text" id="string"></td>
+        </tr>
+
+        <tr>
+            <td></td>
+            <td><span id="rev_txt"></span></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><button onclick="rev()">Reverse</button></td>
+        </tr>
+    </table>
+</body>
+</html>

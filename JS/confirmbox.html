@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function confirm1(){
+            var text;
+            if(confirm("press a button") == true)
+            {
+                text = "You pressed OK";
+            }
+            else{
+                text = "you cancelled";
+            }
+
+            document.getElementById("s1").innerHTML = text;
+        }
+    </script>
+</head>
+<body>
+    <button onclick="confirm1()">Press</button>
+    <span id="s1"></span>
+</body>
+</html>

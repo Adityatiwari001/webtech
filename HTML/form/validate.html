@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> LOGIN FPORM </title>
+</head>
+<form>
+	<table>
+<body> 
+	<tr>
+		<td>
+			USER NAME
+		</td>
+		<td>
+			<input type="text" id="username" placeholder="enter your username" required>
+		</td>
+	</tr>
+	<tr>
+		<td>PASSWORD</td>
+		<td>
+			<input type="password" id="password" placeholder="enter your password" required>
+		</td>
+		<tr>
+			<td></td>
+			<td><input type="submit" onclick="validate()"></td>
+		</tr>
+	</tr>
+</table>
+</form>
+<script language="javascript">
+function validate(){
+	var user = document.getElementById("username").value;
+	var pass = document.getElementById("password").value;
+
+	if (user == "a" && pass == "a"){
+		alert("The username and password is correct.")
+		window.location.href = "www.google.com"
+	}
+	else
+	{
+		alert("The username and password is invalid !!")
+	}
+return false;
+}
+
+</script>
+</body> 
+</html>
